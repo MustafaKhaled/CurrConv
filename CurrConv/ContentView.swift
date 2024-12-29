@@ -83,6 +83,8 @@ struct ContentView: View {
                         .padding()
                 }
             }
+        }.sheet(isPresented: $showInfo){
+            ExchangeInfo()
         }
     }
 }
